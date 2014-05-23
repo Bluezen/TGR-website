@@ -1,0 +1,14 @@
+---
+layout: default
+title: TGR - Changelogs
+---
+
+<div id="home">
+  <h1>Release Notes</h1>
+    <p>Not much here for now as the app is not yet out on the wild (that plus the fact that I still haven't managed to make my 'Changelogs' collection work with jekyll grrr)</p>
+  <ul class="posts">
+    {% for changelog in site.changelogs %}
+      <li><span>{{ changelog.date | date_to_string }}</span> &raquo; <a href="{{ changelog.url }}">{{ changelog.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
