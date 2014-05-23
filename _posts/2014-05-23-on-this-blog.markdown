@@ -53,6 +53,6 @@ I now expect from you not to yell when reporting an issue, whatever the fuck hap
 If you are polite, I might even start working immediately on it to fix it and this at any time of the day ;)
 
 
-I feel like I succeeded selling you the app! What a great idea starting by mentionning bugs an issues!
+I feel like I succeeded selling you the app! What a great idea to start the first post by mentionning bugs an issues!
 
 Please enjoy it when it comes out.
