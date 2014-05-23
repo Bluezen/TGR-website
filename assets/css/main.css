@@ -4,19 +4,43 @@
 /*
 /*****************************************************************************/
 
-/* Global Reset */
-
-
-div.container {
-    padding-bottom: 30px;
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    /* Space out content a bit */
+/*    padding-bottom: 20px;*/
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+    padding-right: 50px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
 }
 
+div.container {
+    margin-bottom: 80px;
+}
+
+
+/* Change navbar-brand font to use our custom font */
 a.navbar-brand {
     font-family: steelfishregular;
 }
 
 /* Parameters to embed stuff like video frame responsively */
-
  .embed-container {
      position: relative;
 
@@ -47,10 +71,6 @@ a.navbar-brand {
      height: 100%;
  }
 
-/* Space out content a bit */
-body {
-  padding-bottom: 20px;
-}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -58,15 +78,6 @@ body {
 {
   padding-right: 15px;
   padding-left: 15px;
-}
-
-/* Custom page footer */
-footer {
-  padding-right: 50px;
-  padding-left: 15px;
-  padding-top: 10px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
 }
 
 /* Main marketing message and sign up button */
