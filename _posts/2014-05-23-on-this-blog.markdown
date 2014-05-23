@@ -2,7 +2,7 @@
 layout: post
 title:  "On this blog"
 categories: blog
-date: 2014-04-06
+date: 2014-05-23
 description:
   What you can expect to read.
 ---
