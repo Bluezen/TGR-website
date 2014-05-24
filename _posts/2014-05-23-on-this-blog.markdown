@@ -4,7 +4,7 @@ title:  "On this blog"
 categories: blog
 date: 2014-05-23
 description:
-  What you can expect to find here.
+  About what you can expect to find here.
 ---
 
 If you can overcome the fact that I'm not a native english speaker and that you might encounter terrible grammar (and jokes) here and there, you will be able to find on this blog some -- humble -- insight on the making of the TGR app.

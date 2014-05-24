@@ -1,14 +1,18 @@
-name: 			The Gamer's Reader
-description:	Landpage of "The Gamer's Reader", the best gaming news iOS app
-#url: 			http://localhost:4000
-url: 			http://thegamersreader.com
+name:        The Gamer's Reader
+title:       TGR
+description: Landpage of "The Gamer's Reader", the best gaming news iOS app
+#url:         http://localhost:4000
+url:         http://thegamersreader.com
 
-markdown: 		redcarpet
-pygments: 		true
+markdown:    redcarpet
+pygments:    true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone: 		Europe/Paris
+timezone:    Europe/Paris
+
+# Analytics
+google_analytics: UA-40294325-2
 
 collections:
-    changelogs:
-        output: false
+ - changelogs:
+    output: true

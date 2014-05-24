@@ -34,6 +34,9 @@ div.container {
     margin-bottom: 80px;
 }
 
+.container h1 {
+    padding-bottom:40px;
+}
 
 /* Change navbar-brand font to use our custom font */
 a.navbar-brand {
