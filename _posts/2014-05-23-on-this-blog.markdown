@@ -20,6 +20,7 @@ Nah, I'm joking. I won't give excuses.
     if (error.code == notFunny) {
         NSLog(@"Act as if nothing hapened.");
     } else {
+        // Oh crap unknown error
         NSLog(@"Throw to closest black hole.");
 	}
 }
