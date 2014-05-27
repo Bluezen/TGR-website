@@ -9,7 +9,10 @@ title: Blog
         {% for post in site.posts %}
         <li>
             <span>{{ post.date | date_to_string }}</span>&raquo;
-            <a href="{{ post.url }}">{{ post.title }}</a> &nbsp;&#8211;&nbsp; {{ post.description }} &nbsp;&#8211;&nbsp; {% include comments_count.html %}
+            <a href="{{ post.url }}">{{ post.title }}</a> &nbsp;&#8211;&nbsp; {{ post.description }} &nbsp;&#8211;&nbsp; 
+            {% if site.disqus_short_name and post.comments == true and site.disqus_show_comment_count == true %}
+		    {% include post/comments_link.html %}
+		    {% endif %}
             
         </li>
         {% endfor %}
