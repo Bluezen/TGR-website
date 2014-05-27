@@ -3,6 +3,7 @@ layout: post
 title:  "On this blog"
 categories: blog
 date: 2014-05-23
+comments: true
 description:
   About what you can expect to find here.
 ---

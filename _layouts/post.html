@@ -2,8 +2,15 @@
 layout: default
 ---
 <h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<p class="meta">{{ page.date | date_to_string }} &nbsp;&#8211;&nbsp; {% include comments_count.html %}</p>
 
 <div class="post">
-{{ content }}
+    {{ content }}
+    <p style="padding-top:1rem;">
+        If you have any questions or comments, please post them below. {% include twitter_plug.html %}
+    </p>
 </div>
+
+
+
+{% include comments.html %}

@@ -38,6 +38,11 @@ div.container {
     padding-bottom:40px;
 }
 
+.post {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 /* Change navbar-brand font to use our custom font */
 a.navbar-brand {
     font-family: steelfishregular;
