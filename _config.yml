@@ -4,14 +4,22 @@ description: Landpage of "The Gamer's Reader", the best gaming news iOS app
 #url:         http://localhost:4000
 url:         http://thegamersreader.com
 
-markdown:    redcarpet
-pygments:    true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Paris
 
 # Analytics
 google_analytics: UA-40294325-2
+
+# Disqus Comments
+disqus_short_name: thegamersreader
+disqus_show_comment_count: true
+
+#
+# Jekyll Settings
+#
+markdown:    redcarpet
+pygments:    true
 
 collections:
  - changelogs:

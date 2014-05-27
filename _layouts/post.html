@@ -13,4 +13,9 @@ layout: default
 
 
 
-{% include comments.html %}
+{% if site.disqus_short_name and page.comments == true %}
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread">{% include post/disqus_thread.html %}</div>
+</section>
+{% endif %}
