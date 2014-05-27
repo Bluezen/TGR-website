@@ -3,7 +3,7 @@ layout: default
 ---
 <h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date_to_string }} &nbsp;&#8211;&nbsp;
-    {% if site.disqus_short_name and post.comments == true and site.disqus_show_comment_count == true %}
+    {% if site.disqus_short_name and page.comments == true and site.disqus_show_comment_count == true %}
 		    {% include post/comments_link.html %}
     {% endif %}
 </p>
