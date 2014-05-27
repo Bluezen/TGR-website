@@ -1,9 +1,9 @@
 {% if page.comments or post.comments %}
 
 {% if post.comments %}
-<a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">YY Comments</a>
+<a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ site.url }}{{ post.url }}">YY Comments</a>
 {% elsif page.comments %}
-<a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}">XX Comments</a>
+<a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ site.url }}{{ page.url }}">XX Comments</a>
 {% endif %}
       <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
