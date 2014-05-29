@@ -18,6 +18,9 @@ title: Blog
         {% endfor %}
     </ul>
     <p style="padding-top:4rem;">
-        <a href="{{ site.url }}/atom.xml">RSS Feed.</a>
+<!--        <a href="{{ site.url }}/atom.xml">RSS Feed.</a>-->
+        <input type="button" onclick="(function(btn){var z=document.createElement('script');document.subtomeBtn=btn;z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})(this)" value="Subscribe" data-subtome-resource="{{ site.url }}" data-subtome-feeds="{{ site.url }}/atom.xml">
+
+
     </p>
 </div>
