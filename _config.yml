@@ -16,6 +16,15 @@ disqus_short_name: thegamersreader
 disqus_show_comment_count: true
 
 #
+# Glynn Settings (FTP sync)
+#
+ftp_host: 'ftp.thegamersreader.com'
+ftp_dir: '/www'
+ftp_passive: false
+ftp_port: 21
+ftp_username: 'thegamere'
+
+#
 # Jekyll Settings
 #
 markdown:    redcarpet
