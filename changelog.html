@@ -4,17 +4,18 @@ title: Changelogs
 ---
 <div id="home">
     <h1>Release Notes</h1>
-    <p>Not much here for now as the app is not yet out on the wild (that plus the fact that I still haven't managed to make my 'Changelogs' collection work with jekyll grrr)</p>
-
-    {% for changelog in site.changelogs offset: 0 limit: 10 %}
-    <h2>
-        <a href="{{ site.prefix }}{{ changelog.url }}">{{ changelog.title }}</a>
-    </h2>
-    <p class="meta">{{ changelog.date | date_to_string }}</p>
-
-    <div class="post">
-        {{ changelog.content }}
-    </div>
-    <hr />
-    {% endfor %}
+    
+    <ul class="posts">
+        {% for changelog in site.changelogs offset: 0 limit: 10 %}
+        <li>
+            <span>{{ changelog.date | date_to_string }}</span>&nbsp;&raquo;
+            <a href="{{ site.prefix }}{{ changelog.url }}">{{ changelog.title }}</a> &nbsp;&#8211;&nbsp; {{ changelog.description }} &nbsp;&#8211;&nbsp; 
+            {% if site.disqus_short_name and changelog.comments == true and site.disqus_show_comment_count == true %}
+		    {% include post/comments_link.html %}
+		    {% endif %}
+            
+        </li>
+        {% endfor %}
+    </ul>
+    
 </div>

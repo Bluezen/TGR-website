@@ -22,5 +22,5 @@ markdown:    redcarpet
 pygments:    true
 
 collections:
- - changelogs:
+  changelogs:
     output: true
