@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>TGR</title>
- <link href="http://bluezen.github.io/TGR-website//atom.xml" rel="self"/>
- <link href="http://bluezen.github.io/TGR-website//"/>
- <updated>2014-07-25T01:15:22+02:00</updated>
- <id>http://bluezen.github.io/TGR-website/</id>
+ <link href="http://bluezen.github.io/TGR-website/atom.xml" rel="self"/>
+ <link href="http://bluezen.github.io/TGR-website/"/>
+ <updated>2014-07-25T01:28:29+02:00</updated>
+ <id>http://bluezen.github.io/TGR-website</id>
  <author>
    <name></name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>On this blog</title>
-   <link href="http://bluezen.github.io/TGR-website//blog/2014/05/23/on-this-blog.html"/>
+   <link href="http://bluezen.github.io/TGR-website/blog/2014/05/23/on-this-blog.html"/>
    <updated>2014-05-23T00:00:00+02:00</updated>
-   <id>http://bluezen.github.io/TGR-website//blog/2014/05/23/on-this-blog</id>
+   <id>http://bluezen.github.io/TGR-website/blog/2014/05/23/on-this-blog</id>
    <content type="html">&lt;p&gt;If you can overcome the fact that I&amp;#39;m not a native english speaker and that you might encounter terrible grammar (and jokes) here and there, you will be able to find on this blog some -- humble -- insight on the making of the TGR app.&lt;/p&gt;
 
 &lt;p&gt;I guess this blog might also be used at some point to give public excuses on the terrible bugs users might face using the app.&lt;/p&gt;
@@ -46,7 +46,7 @@
 
 &lt;p&gt;Same data in a graph:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://bluezen.github.io/TGR-website//assets/img/hour_of_day.png&quot; alt=&quot;chart&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://bluezen.github.io/TGR-website/assets/img/hour_of_day.png&quot; alt=&quot;chart&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;I spent a lot time working during the night. These quiet hours are certainly those on which I have been the most productive. But I have to agree that this was at the expense of an healthy lifestyle.&lt;/p&gt;
 
