@@ -1,47 +1,85 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>{{ site.url }}</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>http://bluezen.github.io/TGR-website/</loc>
+    <lastmod>2014-07-25T01:15:22+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  {% for post in site.posts %}
+  
     <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
-      {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-      {% endif %}
+      <loc>http://bluezen.github.io/TGR-website//blog/2014/05/23/on-this-blog.html</loc>
+      
+        <lastmod>2014-05-23T00:00:00+02:00</lastmod>
+      
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
-  {% endfor %}
-  {% for page in site.pages %}{% if page.layout != nil %}
+  
+  
   <url>
-    <loc>{{ site.url }}{{ page.url }}</loc>
-    {% if page.sitemap.lastmod %}
-      <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
-    {% elsif page.lastmod %}
-      <lastmod>{{ page.lastmod | date: "%Y-%m-%d" }}</lastmod>
-    {% elsif page.date %}
-      <lastmod>{{ page.date | date: "%Y-%m-%d" }}</lastmod>
-    {% else %}
-      <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
-    {% endif %}
-    {% if page.sitemap.changefreq %}
-      <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-    {% else %}
+    <loc>http://bluezen.github.io/TGR-website//atom.xml</loc>
+    
+      <lastmod>2014-07-25</lastmod>
+    
+    
       <changefreq>monthly</changefreq>
-    {% endif %}
-    {% if page.sitemap.priority %}
-      <priority>{{ page.sitemap.priority }}</priority>
-    {% else %}
+    
+    
       <priority>0.3</priority>
-    {% endif %}
+    
   </url>
-  {% endif %}{% endfor %}
+  
+  <url>
+    <loc>http://bluezen.github.io/TGR-website//blog.html</loc>
+    
+      <lastmod>2014-07-25</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://bluezen.github.io/TGR-website//changelog.html</loc>
+    
+      <lastmod>2014-07-25</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://bluezen.github.io/TGR-website//contact.html</loc>
+    
+      <lastmod>2014-07-25</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://bluezen.github.io/TGR-website//index.html</loc>
+    
+      <lastmod>2014-07-25</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
 </urlset>

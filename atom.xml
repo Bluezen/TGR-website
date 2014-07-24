@@ -1,28 +1,66 @@
----
-layout: nil
----
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>{{ site.title }}</title>
- <link href="{{ site.url }}/atom.xml" rel="self"/>
- <link href="{{ site.url }}/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
+ <title>TGR</title>
+ <link href="http://bluezen.github.io/TGR-website//atom.xml" rel="self"/>
+ <link href="http://bluezen.github.io/TGR-website//"/>
+ <updated>2014-07-25T01:15:22+02:00</updated>
+ <id>http://bluezen.github.io/TGR-website/</id>
  <author>
-   <name>{{ site.author.name }}</name>
-   <email>{{ site.author.email }}</email>
+   <name></name>
+   <email></email>
  </author>
 
- {% for post in site.posts %}
+ 
  <entry>
-   <title>{{ post.title }}</title>
-   <link href="{{ site.url }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <title>On this blog</title>
+   <link href="http://bluezen.github.io/TGR-website//blog/2014/05/23/on-this-blog.html"/>
+   <updated>2014-05-23T00:00:00+02:00</updated>
+   <id>http://bluezen.github.io/TGR-website//blog/2014/05/23/on-this-blog</id>
+   <content type="html">&lt;p&gt;If you can overcome the fact that I&amp;#39;m not a native english speaker and that you might encounter terrible grammar (and jokes) here and there, you will be able to find on this blog some -- humble -- insight on the making of the TGR app.&lt;/p&gt;
+
+&lt;p&gt;I guess this blog might also be used at some point to give public excuses on the terrible bugs users might face using the app.&lt;/p&gt;
+
+&lt;p&gt;Nah, I&amp;#39;m joking. I won&amp;#39;t give excuses.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;objc&quot;&gt;&lt;span class=&quot;k&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;application:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UIApplication&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;application&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;didFailMiserably:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NSError&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;notFunny&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;NSLog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&amp;quot;Act as if nothing hapened.&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Oh crap unknown error&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;NSLog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@&amp;quot;Throw to closest black hole.&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Occasionally, in the same way that just occur above, you might come across some (dirty and diabolical) extract of the app code. To be more precise, there will only be the nicely crafted parts that I am not ashamed to expose. I&amp;#39;m sure I can find some interesting stuff between two bloated view controllers.&lt;/p&gt;
+
+&lt;p&gt;For the time being, I will share some very personal data related to the making of this app (let&amp;#39;s break it right now for the NSA, they are not this valuable)... the hours in a day I spent on the app!!&lt;/p&gt;
+
+&lt;p&gt;Hang on, there is more than you think that comes out of this.&lt;/p&gt;
+
+&lt;p&gt;If you are not a developer but have read so far, you will need to know what a commit is to understand the following data. Let&amp;#39;s say that in my case it simply means the end of a working day.&lt;/p&gt;
+
+&lt;table class=&quot;table table-striped table-hover &quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;Hour&lt;/th&gt;&lt;th&gt;0&lt;/th&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;2&lt;/th&gt;&lt;th&gt;3&lt;/th&gt;&lt;th&gt;4&lt;/th&gt;&lt;th&gt;5&lt;/th&gt;&lt;th&gt;6&lt;/th&gt;&lt;th&gt;7&lt;/th&gt;&lt;th&gt;8&lt;/th&gt;&lt;th&gt;9&lt;/th&gt;&lt;th&gt;10&lt;/th&gt;&lt;th&gt;11&lt;/th&gt;&lt;th&gt;12&lt;/th&gt;&lt;th&gt;13&lt;/th&gt;&lt;th&gt;14&lt;/th&gt;&lt;th&gt;15&lt;/th&gt;&lt;th&gt;16&lt;/th&gt;&lt;th&gt;17&lt;/th&gt;&lt;th&gt;18&lt;/th&gt;&lt;th&gt;19&lt;/th&gt;&lt;th&gt;20&lt;/th&gt;&lt;th&gt;21&lt;/th&gt;&lt;th&gt;22&lt;/th&gt;&lt;th&gt;23&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;Commits&lt;/th&gt;&lt;td style=&quot;color: white; background-color: rgb(167, 0, 0)&quot;&gt;8&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(198, 0, 0)&quot;&gt;14&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(208, 0, 0)&quot;&gt;16&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(255, 0, 0)&quot;&gt;25&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(193, 0, 0)&quot;&gt;13&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(167, 0, 0)&quot;&gt;8&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(132, 0, 0)&quot;&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(132, 0, 0)&quot;&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(142, 0, 0)&quot;&gt;3&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(157, 0, 0)&quot;&gt;6&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(137, 0, 0)&quot;&gt;2&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(188, 0, 0)&quot;&gt;12&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(147, 0, 0)&quot;&gt;4&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(152, 0, 0)&quot;&gt;5&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(183, 0, 0)&quot;&gt;11&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(193, 0, 0)&quot;&gt;13&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(152, 0, 0)&quot;&gt;5&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(137, 0, 0)&quot;&gt;2&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(152, 0, 0)&quot;&gt;5&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(157, 0, 0)&quot;&gt;6&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;%&lt;/th&gt;&lt;td style=&quot;color: white; background-color: rgb(167, 0, 0)&quot;&gt;5.00&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(198, 0, 0)&quot;&gt;8.75&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(208, 0, 0)&quot;&gt;10.00&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(255, 0, 0)&quot;&gt;15.62&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(193, 0, 0)&quot;&gt;8.12&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(167, 0, 0)&quot;&gt;5.00&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(132, 0, 0)&quot;&gt;0.62&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(132, 0, 0)&quot;&gt;0.62&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(142, 0, 0)&quot;&gt;1.88&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(157, 0, 0)&quot;&gt;3.75&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(137, 0, 0)&quot;&gt;1.25&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(188, 0, 0)&quot;&gt;7.50&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(147, 0, 0)&quot;&gt;2.50&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(152, 0, 0)&quot;&gt;3.12&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(183, 0, 0)&quot;&gt;6.88&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(193, 0, 0)&quot;&gt;8.12&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(152, 0, 0)&quot;&gt;3.12&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(137, 0, 0)&quot;&gt;1.25&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(152, 0, 0)&quot;&gt;3.12&lt;/td&gt;&lt;td style=&quot;color: white; background-color: rgb(157, 0, 0)&quot;&gt;3.75&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;Same data in a graph:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://bluezen.github.io/TGR-website//assets/img/hour_of_day.png&quot; alt=&quot;chart&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;I spent a lot time working during the night. These quiet hours are certainly those on which I have been the most productive. But I have to agree that this was at the expense of an healthy lifestyle.&lt;/p&gt;
+
+&lt;p&gt;Why sharing this personal stuff? Firstly because I feel like it&amp;#39;s enough unusual (at least for me) to be mentioned but more importantly because this is my way to involve you in the human story of this app.  I want you to be aware that this is a &amp;quot;human size&amp;quot; app.&lt;/p&gt;
+
+&lt;p&gt;I now expect from you not to yell when reporting an issue, whatever the fuck happened. &lt;/p&gt;
+
+&lt;p&gt;If you are polite, I might even start working immediately on it to fix it and this at any time of the day ;)&lt;/p&gt;
+
+&lt;p&gt;I feel like I succeeded selling you the app! What a great idea to start the first post by mentionning bugs an issues!&lt;/p&gt;
+
+&lt;p&gt;Please enjoy it when it comes out.&lt;/p&gt;
+</content>
  </entry>
- {% endfor %}
+ 
 
 </feed>
