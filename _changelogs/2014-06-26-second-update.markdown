@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "1.0.2"
+title:  "1.0.2 - Introducing Search Feature!"
 date:   2014-06-26 15:38:19
 comments: true
 description:
-  Introducing Search feature!
+  Find them all!
 ---
 
 This update was released 6 days after being submited to apple. 

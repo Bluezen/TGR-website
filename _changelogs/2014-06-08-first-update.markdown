@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "1.0.1 First Update"
+title:  "1.0.1 - First Update"
 date:   2014-06-08 19:02:25
 comments: true
 description:
-  Click to see what are the nasty bugs that have been eradicated.
+  1mn of silence for all the bugs reduced to dust.
 ---
 
 The update has been submited to apple a few hours ago. Last time it took them a week before starting to review the app... Let's hope it will be faster this time. 

@@ -34,10 +34,6 @@ div.container {
     margin-bottom: 80px;
 }
 
-.container h1 {
-    padding-bottom:40px;
-}
-
 .post {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -117,3 +113,9 @@ a.navbar-brand {
     border-bottom: 0;
   }
 
+a.thumbnail {
+/*
+    margin-right: 5px;
+    margin-left: 5px;
+*/
+}
