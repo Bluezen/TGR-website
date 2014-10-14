@@ -2,13 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
     <dict>
-        <key>1.2.0</key>
-        <array>
-            <string>FIX: iOS 8 ready.</string>
-        </array>
         <key>1.2.1</key>
         <array>
-            <string>NEW: Widget! Try it in your notification center.</string>
+            <string>Nouveau: Widget! Vos news directement dans votre centre de notification!</string>
         </array>
     </dict>
 </plist>
